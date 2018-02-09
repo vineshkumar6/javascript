@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<script src="angular.min.js"></script>
+<title>Login form</title>
+<body>
+
+
+
+
+
+<style>
+body {
+background-color:	#808000 ;
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+
+}
+form1
+{
+ max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #FFF8DC;
+  border-radius: 20px;
+}
+
+form
+{
+ max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #FFF8DC;
+  border-radius: 20px;
+}
+
+button
+{
+text-align:center;
+}
+
+
+</style>
+<head>
+<script language="javascript">
+function getvalues(){
+alert("heet");
+document.getElementById("display").innerHTML="FirstName : "+document.hi.FirstName.value 
++ "lastname:" + document.hi.LastName.value + "Password:" + document.hi.Pwd.value + "Age:" 
++ document.hi.user_age.value + "biodate:" + document.hi.user_bio.value + "Job:" 
++ document.hi.user_job.value + "Interest:" + document.hi.user_interest.value;
+    
+}
+
+</script>
+
+
+</head>
+<form action="#" method="post" name="hi">
+<p id="display"></p> 
+<h1>1.Sign Up</h1>
+Name:<br>
+&nbsp;<input type="text" name="FirstName" required><br>
+<br>
+Email Id:<br>
+&nbsp;<input type="text" name="LastName"><br>
+<br>
+Password:<br>
+&nbsp;<input type="text" name="Pwd" required><br>
+<br>
+Age:<br>
+<input type="radio" name="user_age">Under 13<br>
+<input type="radio" name="user_age">13 or older<br>
+<br>
+
+<h1>2.Your Profile</h1>
+<p>Biography</p>
+<textarea id="bio" name="user_bio"></textarea>
+<br>
+<p>Job Role</p>
+<select id="job" name="user_job">
+          <optgroup label="Web">
+            	<option value="frontend_developer">Front-End Developer</option>
+            	<option value="php_developor">PHP Developer</option>
+            	<option value="Android_developer">Androild Developer</option>
+            	<option value="iOS_developer">iOS Developer</option>
+            	<option value="mobile_designer">Mobile Designer</option>
+            	<option value="business_owner">Business Owner</option>
+            	<option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+        </select>
+<br>
+<br>
+<select id="job" name="user_job" multiple>
+          <optgroup label="Web">
+            	<option value="frontend_developer">Front-End Developer</option>
+            	<option value="php_developor">PHP Developer</option>
+            	<option value="Android_developer">Androild Developer</option>
+            	<option value="iOS_developer">iOS Developer</option>
+            	<option value="mobile_designer">Mobile Designer</option>
+            	<option value="business_owner">Business Owner</option>
+            	<option value="freelancer">Freelancer</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="secretary">Secretary</option>
+            <option value="maintenance">Maintenance</option>
+          </optgroup>
+        </select>
+<p>Interests:</p>
+<input type="checkbox"name="user_interest">Development<br>
+ <input type="checkbox"name="user_interest">Design<br>
+ <input type="checkbox"name="user_interest">Business</label>
+ </fieldset>
+<br>
+<div class="w3-panel" style="width:30%">
+<button  type="submit" onclick="getvalues(); return false;">Sign Up</button>
+
+</div>
+ 
+</form>
+
+
